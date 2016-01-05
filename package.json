@@ -1,0 +1,28 @@
+{
+  "name": "actions-service",
+  "version": "0.1.0",
+  "description": "Microservice handling all service operations.",
+  "author": {
+    "name": "Matthew Pikar",
+    "email": "matthew.pikar@gmail.com"
+  },
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha test/*.test.js",
+    "debug": "node index.js debug:true"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "seneca": "^0.9.2",
+    "seneca-redis-transport": "^0.3.0"
+  },
+  "devDependencies": {
+    "async": "^1.5.0",
+    "bluebird": "^3.1.1",
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.1.0",
+    "mocha": "^2.3.4"
+  }
+}
