@@ -14,11 +14,15 @@ for(var i= 2, len=process.argv.length; i<len; i++){
 _.extend(options, {
     resourceName: 'actions',
     resourceFormat: {
-        required$: ['name'],
-        only$: ['id', 'name', 'movementId', 'description', 'image', 'organizers'],
+        required$: ['sourceId','name'],
+        only$: ['id','sourceId','type','name','targets','suspenseDate','content'],
+        id: 'string$',
+        sourceId: 'string$',
+        type: 'string$',
         name: 'string$',
-        movementId: 'string$',
-        description: 'string$'
+        targets: 'object$',
+        suspenseDate: 'string$',
+        content: 'object$'
     }
 })
 
