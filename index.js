@@ -15,11 +15,13 @@ _.extend(options, {
     resourceName: 'actions',
     resourceFormat: {
         required$: ['sourceId','name'],
-        only$: ['id','sourceId','type','name','targets','suspenseDate','content'],
+        only$: ['id','sourceId','type','name','created','modified','targets','suspenseDate','content'],
         id: 'string$',
         sourceId: 'string$',
         type: 'string$',
         name: 'string$',
+        created: 'string$',
+        modified: 'string$',
         targets: 'object$',
         suspenseDate: 'string$',
         content: 'object$'
